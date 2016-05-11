@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('hymnee');
+  this.route('hymnee', function() {
+    this.route('policy');
+  });
 });
 
 export default Router;
