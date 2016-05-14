@@ -1,0 +1,50 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome";
+//@import "../../assests/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+$background-color: #3f51b5;
+$main-text-color: #000;
+html,body{
+  background: $background-color url('img/topbg.png');
+  font-family: 'Roboto', sans-serif;
+}
+
+#intro{
+  margin: 10% 0 0 10%;
+}
+
+.80-width{
+  max-width: 70%;
+}
+
+#bottom-menu{
+  font-size: 80px;
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px;
+}
+
+.center-div{
+  margin: auto;
+}
+
+.center{
+  text-align: center;
+}
+
+#text1{
+  font-size: 80px;
+  color: white;
+}
+#text2{
+  font-size: 80px;
+  font-weight: 300;
+  color: $main-text-color;
+}
+#text3{
+  font-size: 40px;
+  color: white;
+}
