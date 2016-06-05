@@ -1,6 +1,11 @@
 @import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+$main-text-size: 80px;
+$medium-text-size: 60px;
+$small-text-size: 40px;
+$tiny-text-size: 20px;
+
 $background-color: #3f51b5;
 $main-text-color: #000;
 html,body{
@@ -9,11 +14,16 @@ html,body{
 }
 
 #intro{
-  margin: 10% 0 0 10%;
+  padding: 10%;
+  min-width: 100%
 }
 
 .80-width{
   max-width: 70%;
+}
+
+.container{
+  max-width: 800px;
 }
 
 #bottom-menu{
@@ -34,15 +44,33 @@ html,body{
 }
 
 #text1{
-  font-size: 80px;
+  font-size: $main-text-size;
   color: white;
 }
 #text2{
-  font-size: 80px;
+  font-size: $main-text-size;
   font-weight: 300;
   color: $main-text-color;
 }
 #text3{
-  font-size: 40px;
+  font-size: $small-text-size;
   color: white;
+}
+
+.menu-icon {
+    font-size: 80px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-icon {
+        font-size: 40px;
+    }
+    #text1{
+      font-size: 70px;}
+    #text2{
+      font-size: 70px;}
+    #text3{
+      font-size: 30px;
+    }
+
 }

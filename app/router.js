@@ -9,6 +9,8 @@ Router.map(function() {
   this.route('hymnee', function() {
     this.route('policy');
   });
+  this.route('android');
+  this.route('home');
 });
 
 export default Router;
